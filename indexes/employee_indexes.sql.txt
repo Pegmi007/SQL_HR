@@ -1,0 +1,2 @@
+CREATE INDEX idx_emp_dept ON Employees(department_id);
+CREATE INDEX idx_sales_date ON Sales(sale_date);

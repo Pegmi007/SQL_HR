@@ -1,0 +1,24 @@
+
+#### **schema/create_tables.sql**
+```sql
+CREATE TABLE Departments (
+    department_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
+);
+
+CREATE TABLE Employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department_id INT,
+    salary DECIMAL(10,2),
+    status VARCHAR(10),
+    FOREIGN KEY (department_id) REFERENCES Departments(department_id)
+);
+
+CREATE TABLE Sales (
+    sale_id INT PRIMARY KEY,
+    employee_id INT,
+    amount DECIMAL(10,2),
+    sale_date DATE,
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id)
+);

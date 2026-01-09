@@ -1,0 +1,6 @@
+# SQL Tips
+
+- Always use JOINs instead of subqueries when possible for performance.
+- Use indexes on columns frequently filtered or joined.
+- Avoid SELECT * in production queries.
+- Use window functions for ranking, moving averages, and trends.

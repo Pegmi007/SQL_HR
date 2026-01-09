@@ -1,0 +1,4 @@
+CREATE VIEW Active_Employees AS
+SELECT employee_id, name, department_id, salary
+FROM Employees
+WHERE status = 'Active';
